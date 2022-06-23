@@ -1,0 +1,68 @@
+body {
+  padding-top: 80px;
+  /*background-color: #ddd;*/
+  background-color: rgb(32, 32, 32);
+  background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, rgba(0,0,0,1)), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
+  background-size: 100% 100%, 10px 10px, 10px 10px, 10px 5px;
+  background-position: 0px 0px, 0px 0px, 5px 5px, 0px 0px;
+
+  height: 100vh;
+}
+.ifHolder {
+  position: relative;
+  max-width: 420px;
+  height: 200px;
+  overflow: hidden;
+  display: inline-block;
+  margin: 10px auto;
+}
+
+iframe {
+  width: 1280px;
+  height: 800px;
+  display: block;
+  /*margin-top: -540px;*/
+  -ms-zoom: 0.3;
+  -moz-transform: scale(0.3);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.3);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.3);
+  -webkit-transform-origin: 0 0;
+}
+textarea {
+  width: 100%;
+  height: 300px;
+}
+
+.ifHolder label {
+  background: transparent;
+  z-index: 999;
+  position: absolute;
+  padding: 0px 4px;
+
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 990;
+  background: transparent;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.brand-txt {
+  color: #fff;
+}
+.navbar-brand {
+  width: 100px;
+}
+.btn-refresh {
+  position: absolute;
+  z-index: 999;
+  right: 16px;
+  top: 5px;
+}

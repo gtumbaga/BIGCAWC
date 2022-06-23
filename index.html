@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>BACKGROUND INTEGRATED GIZMO for CONCURRENT AUTOMATED WEBSITE CHECKING</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://kit.fontawesome.com/df61f32025.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="modal fade" tabindex="-1" id="entryModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Enter URL's</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>One entry per line</li>
+              <li>These will be appended.</li>
+            </ul>
+            <textarea id="urlList" name="urlList" placeholder="nickname, http://someurl.com/"></textarea>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" onclick="goURLs()" data-bs-dismiss="modal" >Go!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">BIGCAWC</a> 
+        <label class="brand-txt">BACKGROUND INTEGRATED GIZMO for<br/>CONCURRENT AUTOMATED WEBSITE CHECKING</label>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <!--<li class="nav-item">-->
+              <!--<a class="nav-link active" aria-current="page" href="#">Home</a>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+              <!--<a class="nav-link" href="#">Link</a>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+              <!--<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
+            <!--</li>-->
+          </ul>
+          <div class="d-flex">
+            <button class="btn btn-outline-secondary me-2" type="button" onclick="allFramesRest()"><i class="fa fa-sync"></i> Refresh All</button>
+            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="modal" data-bs-target="#entryModal">Enter URL's</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container-fluid mt-6">
+      <div class="row" id="podsHolder">
+        <!--<div class="ifHolder col-lg-4">-->
+          <!--<iframe-->
+            <!--id="if01"-->
+            <!--src="https://via.placeholder.com/400x1000.png?text=placeholder"-->
+            <!--frameborder="0">-->
+          <!--</iframe>-->
+        <!--</div>-->
+        <!--<div class="ifHolder col-lg-4">-->
+          <!--<iframe-->
+            <!--id="if02"-->
+            <!--src="https://via.placeholder.com/400x1000.png?text=placeholder"-->
+            <!--frameborder="0">-->
+          <!--</iframe>-->
+        <!--</div>-->
+        <!--<div class="ifHolder col-lg-4">-->
+          <!--<iframe-->
+            <!--id="if03"-->
+            <!--src="https://via.placeholder.com/400x1000.png?text=placeholder"-->
+            <!--frameborder="0">-->
+          <!--</iframe>-->
+        <!--</div>-->
+      </div>
+      
+    </main>
+
+    <!--<iframe-->
+    <!--src="https://destinytracker.com/destiny-2/profile/steam/4611686018498958889/overview"-->
+    <!--frameborder="0">-->
+    <!--</iframe>-->
+    <!--<iframe-->
+    <!--src="https://destinytracker.com/destiny-2/profile/steam/4611686018470819712/overview"-->
+    <!--frameborder="0">-->
+    <!--</iframe>-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
